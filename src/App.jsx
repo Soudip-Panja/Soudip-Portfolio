@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import Navbar from "./components/Navbar";
 import { Link } from "react-router-dom";
 import "./Styles.css";
+import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 import {
   Sparkles,
   Download,
@@ -173,15 +174,14 @@ function App() {
               </div>
             </div>
 
-            {/* RIGHT SIDE - IMAGE */}
             <div className="col-md-6 d-flex align-items-center justify-content-center mt-5 mt-md-0">
               <div className="hero-img-container">
-                <img
-                  src="Coding.gif"
-                  alt="coding gif"
-                  className="img-fluid hero-img"
+                <DotLottieReact
+                  src="https://lottie.host/58753882-bb6a-49f5-a2c0-950eda1e135a/NLbpVqGegK.lottie"
+                  loop
+                  autoplay
+                  className="hero-img"
                 />
-                {/* Optional: A glowing backdrop behind the image */}
                 <div className="hero-glow"></div>
               </div>
             </div>
