@@ -75,7 +75,7 @@ function App() {
       >
         <div className="container py-5">
           <div className="row">
-            <div className="col-md-8 mt-5">
+            <div className="col-md-6 mt-5">
               {/* Badge Animation */}
               <div className="animate-float">
                 <div className="badge-glow"></div>
@@ -170,6 +170,19 @@ function App() {
                     <CodeXml size={28} strokeWidth={1.5} />
                   </a>
                 </div>
+              </div>
+            </div>
+
+            {/* RIGHT SIDE - IMAGE */}
+            <div className="col-md-6 d-flex align-items-center justify-content-center mt-5 mt-md-0">
+              <div className="hero-img-container">
+                <img
+                  src="Coding.gif"
+                  alt="coding gif"
+                  className="img-fluid hero-img"
+                />
+                {/* Optional: A glowing backdrop behind the image */}
+                <div className="hero-glow"></div>
               </div>
             </div>
           </div>
