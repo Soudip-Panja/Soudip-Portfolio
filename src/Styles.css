@@ -1,0 +1,117 @@
+:root {
+  --main-bg-color: rgb(2.55, 0, 26.3);
+}
+
+.navbar-toggler {
+  border-color: white !important;
+}
+
+.navbar-toggler-icon {
+  filter: invert(1) brightness(2);
+}
+
+.gradient-text1 {
+  background: linear-gradient(90deg, #a855f7, #6366f1);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-text2 {
+  background: linear-gradient(90deg, #6366f1, #a855f7);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Badge Part */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-float {
+  display: inline-block;
+  position: relative;
+  animation: float 6s ease-in-out infinite;
+  z-index: 10;
+}
+
+.badge-glow {
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(90deg, #6366f1, #a855f7);
+  border-radius: 9999px;
+  filter: blur(8px);
+  opacity: 0.3;
+  transition: opacity 1s;
+}
+
+.animate-float:hover .badge-glow {
+  opacity: 0.5;
+}
+
+.badge-inner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 9999px;
+}
+
+.badge-text {
+  font-size: 1rem;
+  font-weight: 500;
+  background: linear-gradient(90deg, #6366f1, #a855f7);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Title Part */
+.title-block {
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+.text-glow {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  background: linear-gradient(90deg, #6366f1, #a855f7);
+  filter: blur(24px);
+  opacity: 0.2;
+  z-index: -1;
+  border-radius: 1rem;
+}
+.gradient-text-light {
+  background: linear-gradient(90deg, #ffffff, #dbeafe, #e9d5ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  position: relative;
+}
+
+.gradient-text2 {
+  position: relative;
+}
+
+
+
+
