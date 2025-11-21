@@ -24,7 +24,7 @@
   -webkit-text-fill-color: transparent;
 }
 
-/* Badge Part */
+/* Badge Part -> Home Page */
 @keyframes float {
   0%,
   100% {
@@ -81,7 +81,7 @@
   color: transparent;
 }
 
-/* Title Part */
+/* Title Part -> Home Page */
 .title-block {
   position: relative;
   display: inline-block;
@@ -112,6 +112,209 @@
   position: relative;
 }
 
+/* Typing Text -> Home Page */
+.typing-cursor {
+  display: inline-block;
+  width: 4px;
+  height: 1em;
+  background-color: #a855f7;
+  margin-left: 6px;
+  vertical-align: -4px;
+  animation: blink 0.8s step-end infinite;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.dynamic-text {
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 1.8rem;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 300;
+  letter-spacing: 1px;
+  min-height: 1.6em;
+  margin-top: 1rem;
+}
+
+/* Description Text -> Home Page */
+.hero-description {
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 1.4rem;
+  font-weight: 250;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.5);
+  max-width: 600px;
+  margin-top: 1rem;
+}
+
+/* Tech Stack Buttons -> Home Page */
+.tech-stack-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.tech-button {
+  display: inline-block;
+  padding: 0.6rem 1.5rem;
+  border-radius: 9999px;
+  border: 1px solid rgba(168, 85, 247, 0.25);
+  background-color: rgba(99, 102, 241, 0.08);
+  color: rgba(255, 255, 255, 0.85);
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  backdrop-filter: blur(8px);
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+.tech-button:hover {
+  border-color: rgba(168, 85, 247, 0.5);
+  background-color: rgba(99, 102, 241, 0.15);
+  color: #ffffff;
+  box-shadow: 0 0 15px rgba(168, 85, 247, 0.2);
+  transform: translateY(-2px);
+}
+
+/* Contact and Resume Button -> Home Page */
+.cta-container {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+}
+
+.cta-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+
+  padding: 0.8rem 2.2rem;
+  border-radius: 0.8rem;
+
+  background: rgba(13, 13, 25, 0.8);
+
+  border: 1px solid rgba(168, 85, 247, 0.35);
+
+  box-shadow: 0 4px 15px -3px rgba(168, 85, 247, 0.3),
+    0 0 30px -5px rgba(99, 102, 241, 0.2);
+
+  color: rgba(255, 255, 255, 0.9);
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.1rem;
+  text-decoration: none;
+
+  backdrop-filter: blur(12px);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.cta-button:hover {
+  box-shadow: 0 6px 20px -2px rgba(168, 85, 247, 0.6),
+    0 0 35px -5px rgba(168, 85, 247, 0.4);
+
+  border-color: rgba(168, 85, 247, 0.8);
+  transform: translateY(-4px);
+  color: white;
+}
+
+.cta-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.1),
+    transparent
+  );
+  transition: left 0.5s;
+  z-index: -1;
+}
+
+.cta-button:hover::before {
+  left: 100%;
+}
 
 
+/* Social Links Container -> Home Page */
+.social-links-container {
+  display: flex;
+  gap: 1.5rem; /* Matches your CTA gap */
+  margin-top: 2rem;
+  align-items: center;
+}
+
+/* Individual Social Button Design */
+.social-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  width: 55px;  /* Fixed square size */
+  height: 55px;
+  border-radius: 16px; /* Soft rounded corners like the image */
+  
+  background: rgba(255, 255, 255, 0.03); /* Very transparent fill */
+  border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle border */
+  
+  color: rgba(255, 255, 255, 0.6); /* Default icon color */
+  backdrop-filter: blur(10px);
+  
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Hover Effects (The Glow) */
+.social-btn:hover {
+  border-color: rgba(168, 85, 247, 0.6); /* Purple border on hover */
+  background: rgba(168, 85, 247, 0.1);   /* Slight purple tint */
+  color: white;
+  
+  transform: translateY(-5px); /* Floats up */
+  
+  /* The glow effect seen in your image */
+  box-shadow: 
+    0 0 20px rgba(168, 85, 247, 0.4), 
+    inset 0 0 10px rgba(168, 85, 247, 0.2);
+}
+
+
+.social-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  transition: left 0.5s;
+}
+
+.social-btn:hover::before {
+  left: 100%;
+}
 
