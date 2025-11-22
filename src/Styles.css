@@ -309,9 +309,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: auto;
+  height: 400px;
+  overflow: hidden;
   min-height: 400px;
-  margin-top: 2rem;
+  margin-top: 0rem;
 }
 @media (min-width: 992px) {
   .hero-img-container {
@@ -324,7 +325,7 @@
   height: 100%;
   animation: float 6s ease-in-out infinite;
   filter: drop-shadow(0 0 40px rgba(99, 102, 241, 0.3));
-  transform: scale(1.75);
+  transform: scale(1.4);
 }
 @media (min-width: 576px) {
   .hero-img {
