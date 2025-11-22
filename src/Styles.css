@@ -368,3 +368,23 @@
     transform: translate(-50%, -50%) scale(1.1);
   }
 }
+
+
+/* About Section */
+.gradient-text3 {
+  /* Creates the gradient from a deep indigo to a lighter purple */
+  background: linear-gradient(90deg, #6366f1 0%, #a855f7 100%);
+  
+  /* Standard syntax for clipping the background to the text */
+  background-clip: text;
+  
+  /* Webkit syntax (needed for Chrome/Safari/Edge) */
+  -webkit-background-clip: text;
+  
+  /* Makes the actual text transparent so the background shows through */
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  
+  /* Ensures the gradient applies correctly to the block of text */
+  display: inline-block;
+}
