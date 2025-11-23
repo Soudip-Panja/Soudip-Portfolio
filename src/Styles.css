@@ -369,22 +369,79 @@
   }
 }
 
-
 /* About Section */
 .gradient-text3 {
-  /* Creates the gradient from a deep indigo to a lighter purple */
   background: linear-gradient(90deg, #6366f1 0%, #a855f7 100%);
-  
-  /* Standard syntax for clipping the background to the text */
   background-clip: text;
-  
-  /* Webkit syntax (needed for Chrome/Safari/Edge) */
   -webkit-background-clip: text;
-  
-  /* Makes the actual text transparent so the background shows through */
   -webkit-text-fill-color: transparent;
   color: transparent;
-  
-  /* Ensures the gradient applies correctly to the block of text */
   display: inline-block;
+}
+
+.about-me-desc {
+  color: #9ca2ad;
+  text-align: justify;
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 1.4rem;
+  font-weight: 250;
+  line-height: 1.7;
+}
+
+/* About Me -> Quote */
+.quote-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+
+  background: rgba(13, 13, 30, 0.6);
+
+  border: 1px solid rgba(99, 102, 241, 0.2);
+
+  padding: 1.2rem 1.5rem;
+  border-radius: 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+}
+
+.quote-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 100%;
+
+  background: linear-gradient(
+    90deg,
+    rgba(99, 102, 241, 0.25) 0%,
+    transparent 100%
+  );
+  filter: blur(15px);
+  z-index: 0;
+}
+
+.quote-icon-box {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  color: #6366f1;
+  opacity: 0.8;
+}
+
+.quote-text-content {
+  position: relative;
+  z-index: 1;
+  color: #e2e8f0;
+  font-family: "Segoe UI", Roboto, sans-serif;
+  font-size: 0.95rem;
+  font-weight: 500;
+  font-style: italic;
+  margin: 0;
+  text-align: left;
 }
