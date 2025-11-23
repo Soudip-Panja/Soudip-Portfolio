@@ -1,4 +1,5 @@
-import { Sparkles } from "lucide-react";
+import { Sparkles, FileText, Code } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export default function About() {
   return (
@@ -41,6 +42,24 @@ export default function About() {
               <p className="quote-text-content">
                 "Leveraging AI as a professional tool, not a replacement."
               </p>
+            </div>
+
+            <div className="buttons-container">
+              <a
+                href=""
+                target="_blank"
+                rel="noreferrer"
+              >
+                <button className="btn-cv">
+                  <FileText size={20} /> Download CV
+                </button>
+              </a>
+
+              <Link href="#Portofolio">
+                <button className="btn-projects">
+                  <Code size={20} /> View Projects
+                </button>
+              </Link>
             </div>
           </div>
           <div className="col-12 col-md-6 text-center text-md-start">
