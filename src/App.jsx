@@ -1,6 +1,7 @@
 import Navbar from "./components/Navbar";
 import Home from "./Pages/Home";
 import About from "./Pages/About";
+import Portfolio from "./Pages/Portfolio";
 import "./Styles.css";
 
 function App() {
@@ -10,8 +11,11 @@ function App() {
       <section
         style={{ backgroundColor: "var(--main-bg-color)", minHeight: "100vh" }}
       >
-        <Home />
-        <About />
+        <div className="container">
+          <Home />
+          <About />
+          <Portfolio />
+        </div>
       </section>
     </>
   );

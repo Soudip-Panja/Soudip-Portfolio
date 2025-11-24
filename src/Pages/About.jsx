@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default function About() {
   return (
     <>
-      <section id="about" className="container py-5">
+      <section id="about" className="py-5">
         <div className="text-center mb-4">
           <h1 className="display-3 fw-bold lh-1 gradient-text3">About Me</h1>
           <h5 className="text-light pb-5">
@@ -17,7 +17,6 @@ export default function About() {
             </span>
           </h5>
         </div>
-
         <div className="row py-3 align-items-center">
           <div className="col-12 col-md-6 order-2 order-md-1 text-center text-md-start">
             <h1 className="display-4 fw-bold gradient-text3 pt-2">

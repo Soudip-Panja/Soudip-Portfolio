@@ -70,7 +70,7 @@ export default function Home() {
       <section
         
       >
-        <div className="container py-5">
+        <div className="py-5">
           <div className="row">
             <div className="col-md-6 mt-5">
               {/* Badge Animation */}

@@ -35,9 +35,9 @@ export default function Navbar() {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link text-white" to="/about">
+                <a className="nav-link text-white" href="#about">
                   About
-                </Link>
+                </a>
               </li>
               <li className="nav-item">
                 <Link className="nav-link text-white" to="/portfolio">

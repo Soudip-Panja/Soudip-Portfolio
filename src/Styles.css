@@ -643,3 +643,11 @@
   overflow-y: clip;
   position: relative;
 }
+
+/* Portfolio -> Caption */
+.portfolio-caption {
+  color: #9ca2ad;
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 1.1rem;
+  font-weight: 250;
+}
