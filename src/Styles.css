@@ -513,3 +513,133 @@
   transform: scale(1.05);
   background-color: rgba(168, 85, 247, 0.1);
 }
+
+/* About Me -> Profile Image */
+.profile-wrapper {
+  position: relative;
+  width: 260px;
+  height: 260px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+@media (min-width: 768px) {
+  .profile-wrapper {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media (min-width: 992px) {
+  .profile-wrapper {
+    width: 350px;
+    height: 350px;
+  }
+}
+.profile-glow-layer {
+  position: absolute;
+  top: -15%;
+  left: -15%;
+  width: 130%;
+  height: 130%;
+  z-index: -1;
+  opacity: 0.4;
+  pointer-events: none;
+}
+.glow-blob {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  filter: blur(40px);
+}
+.glow-blob-1 {
+  background: linear-gradient(to right, #7c3aed, #6366f1, #9333ea);
+  animation: spin-slow 10s linear infinite;
+}
+.glow-blob-2 {
+  background: linear-gradient(to left, #d946ef, #f43f5e, #db2777);
+  animation: pulse-slow 4s ease-in-out infinite;
+  opacity: 0.6;
+}
+.glow-blob-3 {
+  background: linear-gradient(to top, #2563eb, #06b6d4, #2dd4bf);
+  animation: float 6s ease-in-out infinite;
+  opacity: 0.6;
+}
+.profile-card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 0 40px rgba(120, 119, 198, 0.3);
+  background-color: #000;
+  transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.profile-wrapper:hover .profile-card {
+  transform: scale(1.05);
+  box-shadow: 0 0 60px rgba(168, 85, 247, 0.5);
+}
+.profile-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.7s ease;
+}
+.profile-wrapper:hover .profile-img {
+  transform: scale(1.1) rotate(2deg);
+}
+.profile-border {
+  position: absolute;
+  inset: 0;
+  border: 4px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  z-index: 10;
+  transition: all 0.7s ease;
+  pointer-events: none;
+}
+.profile-wrapper:hover .profile-border {
+  border-color: rgba(255, 255, 255, 0.4);
+  transform: scale(1.02);
+}
+.profile-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(168, 85, 247, 0.2),
+    transparent,
+    rgba(99, 102, 241, 0.2)
+  );
+  z-index: 5;
+  opacity: 0;
+  transition: opacity 0.7s ease;
+}
+.profile-wrapper:hover .profile-overlay {
+  opacity: 1;
+}
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes pulse-slow {
+  0%,
+  100% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+#about {
+  overflow-x: clip;
+  overflow-y: clip;
+  position: relative;
+}

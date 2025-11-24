@@ -5,9 +5,9 @@ export default function About() {
   return (
     <>
       <section id="about" className="container py-5">
-        <div className="text-center">
+        <div className="text-center mb-4">
           <h1 className="display-3 fw-bold lh-1 gradient-text3">About Me</h1>
-          <h5 className="text-light">
+          <h5 className="text-light pb-5">
             <span className="px-2">
               <Sparkles color="#8254d9" />
             </span>
@@ -18,9 +18,11 @@ export default function About() {
           </h5>
         </div>
 
-        <div className="row py-3">
-          <div className="col-12 col-md-6 text-center text-md-start">
-            <h1 className="display-4 fw-bold gradient-text3">Hello, I'm</h1>
+        <div className="row py-3 align-items-center">
+          <div className="col-12 col-md-6 order-2 order-md-1 text-center text-md-start">
+            <h1 className="display-4 fw-bold gradient-text3 pt-2">
+              Hello, I'm
+            </h1>
             <h1 className="display-4 fw-bold text-white">Soudip Panja</h1>
             <p className="about-me-desc">
               Passionate full-stack developer crafting intuitive digital
@@ -28,7 +30,7 @@ export default function About() {
               Node.js, and MongoDB to build scalable and user-centered
               applications.
             </p>
-            <div className="quote-container">
+            <div className="quote-container mx-auto mx-md-0">
               <div className="quote-icon-box">
                 <svg
                   width="24"
@@ -44,12 +46,8 @@ export default function About() {
               </p>
             </div>
 
-            <div className="buttons-container">
-              <a
-                href=""
-                target="_blank"
-                rel="noreferrer"
-              >
+            <div className="buttons-container justify-content-center justify-content-md-start">
+              <a href="" target="_blank" rel="noreferrer">
                 <button className="btn-cv">
                   <FileText size={20} /> Download CV
                 </button>
@@ -62,8 +60,25 @@ export default function About() {
               </Link>
             </div>
           </div>
-          <div className="col-12 col-md-6 text-center text-md-start">
-            {/* <img src="/Profile Image.jpg" alt="Profile" /> */}
+
+          {/* Profile Image part */}
+          <div className="col-12 col-md-6 order-1 order-md-2 d-flex justify-content-center align-items-center mb-5 mb-md-0">
+            <div className="profile-wrapper">
+              <div className="profile-glow-layer">
+                <div className="glow-blob glow-blob-1"></div>
+                <div className="glow-blob glow-blob-2"></div>
+                <div className="glow-blob glow-blob-3"></div>
+              </div>
+              <div className="profile-card">
+                <div className="profile-border"></div>
+                <div className="profile-overlay"></div>
+                <img
+                  src="/Profile Image.jpg"
+                  alt="Soudip Panja"
+                  className="profile-img"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>
