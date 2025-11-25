@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Sparkles, CodeXml, MessageSquareQuote, Layers } from "lucide-react";
-import ProjectsContainer from "../components/PeojectsContainer";
+import ProjectsContainer from "../components/ProjectsContainer";
 import BlogsContainer from "../components/BlogsContainer"
 import TechStackContainer from "../components/TechStackContainer";
 
