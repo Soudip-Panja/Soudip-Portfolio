@@ -1,6 +1,11 @@
-import { Sparkles } from "lucide-react";
+import { useState } from "react";
+import { Sparkles, CodeXml, MessageSquareQuote, Layers } from "lucide-react";
+import ProjectsContainer from "../components/PeojectsContainer";
+import BlogsContainer from "../components/BlogsContainer"
+import TechStackContainer from "../components/TechStackContainer";
 
 export default function Portfolio() {
+  const [activeTab, setActiveTab] = useState("projects");
   return (
     <>
       <div className="py-5">
@@ -16,6 +21,47 @@ export default function Portfolio() {
             </p>
             <Sparkles color="#8254d9" size={30} />
           </div>
+        </div>
+
+        {/* Tab Buttons Section */}
+        <div className="d-flex justify-content-center mt-4">
+          <div className="toggle-container">
+            <button
+              className={`toggle-btn ${
+                activeTab === "projects" ? "active" : ""
+              }`}
+              onClick={() => setActiveTab("projects")}
+            >
+              <CodeXml size={20} />
+              Projects
+            </button>
+
+            <button
+              className={`toggle-btn ${
+                activeTab === "blogs" ? "active" : ""
+              }`}
+              onClick={() => setActiveTab("blogs")}
+            >
+              <MessageSquareQuote size={20} />
+              Blogs
+            </button>
+
+            <button
+              className={`toggle-btn ${
+                activeTab === "techstack" ? "active" : ""
+              }`}
+              onClick={() => setActiveTab("techstack")}
+            >
+              <Layers size={20} />
+              Tech Stack
+            </button>
+          </div>
+        </div>
+        {/* Content Rendering Section */}
+        <div className="container mt-5">
+          {activeTab === "projects" && <ProjectsContainer />}
+          {activeTab === "blogs" && <BlogsContainer />}
+          {activeTab === "techstack" && <TechStackContainer />}
         </div>
       </div>
     </>
