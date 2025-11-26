@@ -11,49 +11,64 @@ export default function Contact() {
             away.”
           </p>
 
-          <div className="row">
-            <div className="col-8">
-              <div className="card" style={{ backgroundColor: "#1A1A2D" }}>
+          <div className="row g-4 py-4">
+            {/* Form Section - Layout kept as col-8 */}
+            <div className="col-12 col-lg-8">
+              <div className="contact-card">
                 <div className="card-body">
                   <form action="https://api.web3forms.com/submit" method="POST">
                     <input
-                      type="text"
-                      name="name"
-                      className="form-control"
-                      placeholder="Your Name"
-                      required
+                      type="hidden"
+                      name="access_key"
+                      value="b2980961-cc29-4599-a516-4cf4d0c525d1"
                     />
-                    <br />
-                    <input type="hidden" name="access_key" value="b2980961-cc29-4599-a516-4cf4d0c525d1" />
 
-                    <input
-                      type="text"
-                      name="email"
-                      className="form-control"
-                      placeholder="Your Email"
-                      required
-                    />
-                    <br />
-                    <textarea
-                      className="form-control"
-                      type="text"
-                      name="message"
-                      rows="5"
-                     
-                      placeholder="Enter your message"
-                      required
-                    ></textarea>
-                    <br />
-                    <button type="submit">
-                      <Send /> Send Message
+                    {/* Name Input + Icon */}
+                    <div className="input-wrapper">
+                      <input
+                        type="text"
+                        name="name"
+                        className="styled-input"
+                        placeholder="Your Name"
+                        required
+                      />
+                      <UserRound className="input-icon" />
+                    </div>
+
+                    {/* Email Input + Icon */}
+                    <div className="input-wrapper">
+                      <input
+                        type="email"
+                        name="email"
+                        className="styled-input"
+                        placeholder="Your Email"
+                        required
+                      />
+                      <Mail className="input-icon" />
+                    </div>
+
+                    {/* Message Input + Icon */}
+                    <div className="input-wrapper">
+                      <textarea
+                        name="message"
+                        className="styled-input"
+                        rows="5"
+                        placeholder="Enter your message"
+                        required
+                      ></textarea>
+                      <MessageSquareText className="input-icon" />
+                    </div>
+
+                    <button type="submit" className="contact-btn">
+                      <Send size={20} /> Send Message
                     </button>
                   </form>
                 </div>
               </div>
             </div>
 
-            {/* Connect With me */}
-            <div className="col-4">
+            {/* Connect With me - Layout kept as col-4 */}
+            <div className="col-12 col-lg-4">
               <div className="card">
                 <div className="card-body">
                   <h4>Connect with Me</h4>

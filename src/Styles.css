@@ -772,7 +772,7 @@
 .glass-img {
   width: 100%;
   height: auto;
-  display: block; 
+  display: block;
   object-fit: contain;
   transition: transform 0.5s ease;
 }
@@ -837,7 +837,6 @@
   transform: scale(0.95);
 }
 
-
 /* Contact -> caption */
 .contact-caption {
   color: #9ca2ad;
@@ -846,3 +845,80 @@
   font-weight: 250;
 }
 
+/* Contact -> Contact Me form */
+.contact-card {
+  background: rgba(26, 26, 45, 0.6);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+}
+.input-wrapper {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+.input-icon {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #a8a8b3;
+  pointer-events: none;
+  width: 20px;
+  height: 20px;
+  transition: color 0.3s ease;
+}
+.input-wrapper textarea + .input-icon {
+  top: 20px;
+  transform: none;
+}
+.styled-input {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.05) !important;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  padding: 14px 15px 14px 50px;
+  color: #e2e8f0;
+  font-size: 1rem;
+  font-family: "Segoe UI", sans-serif;
+  transition: all 0.3s ease;
+  outline: none;
+}
+.styled-input:focus {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  border-color: #8b5cf6;
+  box-shadow: 0 0 0 4px rgba(139, 92, 246, 0.1);
+}
+.styled-input:focus + .input-icon {
+  color: #8b5cf6;
+}
+.styled-input::placeholder {
+  color: #6b7280;
+}
+textarea.styled-input {
+  min-height: 120px;
+  resize: vertical;
+}
+.contact-btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 14px;
+  background: linear-gradient(90deg, #6366f1, #a855f7);
+  border: none;
+  border-radius: 12px;
+  color: white;
+  font-weight: 600;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(168, 85, 247, 0.4);
+}
+.contact-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(168, 85, 247, 0.6);
+  filter: brightness(1.1);
+}
