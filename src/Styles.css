@@ -922,3 +922,175 @@ textarea.styled-input {
   box-shadow: 0 6px 20px rgba(168, 85, 247, 0.6);
   filter: brightness(1.1);
 }
+
+/* Contact Me -> both card same height fix  */
+.contact-card {
+  background: rgba(26, 26, 45, 0.6);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.connect-card {
+  background: rgba(26, 26, 45, 0.6);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  padding: 2rem;
+  height: 100%;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+}
+.connect-header {
+  color: #e2e8f0;
+  font-family: "Segoe UI", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.connect-header::before {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 4px;
+  background: #6366f1;
+  border-radius: 2px;
+}
+.connect-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+@media (min-width: 576px) {
+  .connect-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Contact Me -> connect me Desktop view */
+.social-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.2rem 1rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  min-height: 110px;
+}
+.social-box:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(168, 85, 247, 0.5);
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.2);
+}
+.social-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 0.8rem;
+  position: relative;
+}
+.social-header::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 5%;
+  width: 90%;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+  border-radius: 2px;
+}
+.social-box:hover .social-header::after {
+  background: linear-gradient(90deg, #6366f1, #a855f7);
+  box-shadow: 0 0 8px rgba(168, 85, 247, 0.5);
+  height: 2px;
+}
+.social-icon-img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 4px;
+}
+.social-handle {
+  font-size: 0.75rem;
+  color: #94a3b8;
+  font-weight: 400;
+  text-align: right;
+  white-space: nowrap;
+}
+.social-content {
+  width: 100%;
+  padding-top: 0.8rem;
+  text-align: center;
+}
+.social-title {
+  margin: 0;
+  color: #f8fafc;
+  font-size: 1.1rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.social-box:hover .social-title {
+  background: linear-gradient(90deg, #6366f1, #a855f7);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+/* Contact Me -> Connect Me mobile view */
+@media (max-width: 575.98px) {
+  .social-box {
+    display: grid;
+    grid-template-columns: 40px 1fr auto;
+    align-items: center;
+    gap: 12px;
+    padding: 1rem;
+    min-height: auto;
+  }
+  .social-header,
+  .social-content {
+    display: contents;
+  }
+  .social-header::after {
+    display: none;
+  }
+  .social-icon-img {
+    grid-column: 1;
+    grid-row: 1;
+    margin: 0;
+    width: 36px;
+    height: 36px;
+  }
+  .social-title {
+    grid-column: 2;
+    grid-row: 1;
+    margin: 0 !important;
+    padding: 0 !important;
+    text-align: left;
+    font-size: 1rem;
+    line-height: 1.2;
+    display: flex;
+    align-items: center;
+  }
+  .social-handle {
+    grid-column: 3;
+    grid-row: 1;
+    margin: 0;
+    text-align: right;
+  }
+}

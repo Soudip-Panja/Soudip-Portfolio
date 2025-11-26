@@ -1,6 +1,47 @@
 import { UserRound, Mail, MessageSquareText, Send } from "lucide-react";
 
 export default function Contact() {
+  // Social Data Configuration
+  const socialLinks = [
+    {
+      title: "LinkedIn",
+      // TASK 3 FIXED: Replaced "Let's Connect" with ID
+      handle: "@soudip-panja", 
+      link: "https://www.linkedin.com/in/soudip-panja/",
+      img: "/LinkedIn.jpeg",
+    },
+    {
+      title: "GitHub",
+      handle: "@Soudip-Panja",
+      link: "https://github.com/Soudip-Panja",
+      img: "/GitHub.png",
+    },
+    {
+      title: "Replit",
+      handle: "@SoudipPanja",
+      link: "https://replit.com/@SoudipPanja",
+      img: "/Replit.png",
+    },
+    {
+      title: "LeetCode",
+      handle: "@soudip03panja",
+      link: "https://leetcode.com/u/soudip03panja/",
+      img: "/LeetCode.png",
+    },
+    {
+      title: "StackBlitz",
+      handle: "@Soudip-Panja",
+      link: "https://stackblitz.com/@Soudip-Panja",
+      img: "/StackBlitz.png",
+    },
+    {
+      title: "CodeSandbox",
+      handle: "@soudip-panja",
+      link: "https://codesandbox.io/u/soudip-panja",
+      img: "/CodeSandbox.jpg", 
+    },
+  ];
+
   return (
     <>
       <section id="Contact" className="pb-5">
@@ -12,7 +53,7 @@ export default function Contact() {
           </p>
 
           <div className="row g-4 py-4">
-            {/* Form Section - Layout kept as col-8 */}
+            {/* Form Section */}
             <div className="col-12 col-lg-8">
               <div className="contact-card">
                 <div className="card-body">
@@ -23,7 +64,6 @@ export default function Contact() {
                       value="b2980961-cc29-4599-a516-4cf4d0c525d1"
                     />
 
-                    {/* Name Input + Icon */}
                     <div className="input-wrapper">
                       <input
                         type="text"
@@ -35,7 +75,6 @@ export default function Contact() {
                       <UserRound className="input-icon" />
                     </div>
 
-                    {/* Email Input + Icon */}
                     <div className="input-wrapper">
                       <input
                         type="email"
@@ -47,7 +86,6 @@ export default function Contact() {
                       <Mail className="input-icon" />
                     </div>
 
-                    {/* Message Input + Icon */}
                     <div className="input-wrapper">
                       <textarea
                         name="message"
@@ -67,11 +105,36 @@ export default function Contact() {
               </div>
             </div>
 
-            {/* Connect With me - Layout kept as col-4 */}
+            {/* Connect With me Section */}
             <div className="col-12 col-lg-4">
-              <div className="card">
-                <div className="card-body">
-                  <h4>Connect with Me</h4>
+              <div className="connect-card">
+                <h4 className="connect-header">Connect With Me</h4>
+                
+                <div className="connect-grid">
+                  {socialLinks.map((social, index) => (
+                    <a
+                      key={index}
+                      href={social.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="social-box"
+                    >
+                      {/* Top Row: Logo and ID */}
+                      <div className="social-header">
+                        <img
+                          src={social.img}
+                          alt={social.title}
+                          className="social-icon-img"
+                        />
+                        <span className="social-handle">{social.handle}</span>
+                      </div>
+                      
+                      {/* Bottom Row: Name */}
+                      <div className="social-content">
+                        <h5 className="social-title">{social.title}</h5>
+                      </div>
+                    </a>
+                  ))}
                 </div>
               </div>
             </div>
