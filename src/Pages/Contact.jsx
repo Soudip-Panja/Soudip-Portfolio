@@ -48,7 +48,7 @@ export default function Contact() {
         <div className="text-center mb-4">
           <h1 className="display-3 fw-bold lh-1 gradient-text3">Contact Me</h1>
           <p className="contact-caption">
-            “Have a question? Send me a message, and I will reply to you right
+            “Have a question ? Send me a message, and I will reply to you right
             away.”
           </p>
 
@@ -57,6 +57,7 @@ export default function Contact() {
             <div className="col-12 col-lg-8">
               <div className="contact-card">
                 <div className="card-body">
+                    <h3 className="connect-header">Get in Touch</h3>
                   <form action="https://api.web3forms.com/submit" method="POST">
                     <input
                       type="hidden"
