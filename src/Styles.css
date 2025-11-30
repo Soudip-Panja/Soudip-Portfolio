@@ -2,21 +2,86 @@
   --main-bg-color: rgb(2.55, 0, 26.3);
 }
 
+
+
+/* --- Navbar Customizations Part --- */
+.custom-navbar {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  background: rgba(13, 13, 30, 0.7) !important; 
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  transition: padding 0.3s ease;
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  padding: 1rem 3rem;
+}
+@media (max-width: 992px) {
+  .custom-navbar {
+    padding: 0.8rem 1.5rem;
+  }
+}
+.navbar-nav {
+  gap: 1rem;
+}
+@media (min-width: 992px) {
+  .navbar-nav {
+    gap: 2.5rem; 
+  }
+}
+.nav-link {
+  position: relative;
+  font-weight: 500;
+  font-size: 1.05rem;
+  color: rgba(255, 255, 255, 0.6); 
+  transition: color 0.3s ease;
+  padding-bottom: 5px;
+}
+.nav-link:hover,
+.nav-link.active {
+  color: #a855f7 !important; 
+  text-shadow: 0 0 10px rgba(168, 85, 247, 0.3); 
+}
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  background: linear-gradient(90deg, #6366f1, #a855f7);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+.nav-link.active::after,
+.nav-link:hover::after {
+  width: 100%;
+}
 .navbar-toggler {
-  border-color: white !important;
+  border: none !important;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  position: relative;
 }
-
+.navbar-toggler:focus {
+  box-shadow: none;
+}
 .navbar-toggler-icon {
-  filter: invert(1) brightness(2);
+  width: 1.3em; 
+  height: 1.3em;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+  filter: none !important;
+  transition: transform 0.3s ease;
 }
-
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+  transform: rotate(90deg);
+}
 .gradient-text1 {
   background: linear-gradient(90deg, #a855f7, #6366f1);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
 .gradient-text2 {
   background: linear-gradient(90deg, #6366f1, #a855f7);
   -webkit-background-clip: text;

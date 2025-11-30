@@ -64,7 +64,7 @@ export default function Home() {
   const techStack = ["MongoDB", "Express.js", "React", "Node.js"];
   return (
     <>
-      <section id="home">
+      <section id="home" className="py-3">
         <div className="py-5">
           <div className="row">
             <div className="col-md-6 mt-5">

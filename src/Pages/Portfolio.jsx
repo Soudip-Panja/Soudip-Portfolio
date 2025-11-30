@@ -8,8 +8,8 @@ export default function Portfolio() {
   const [activeTab, setActiveTab] = useState("projects");
   return (
     <>
-      <section id="portfolio">
-        <div className="py-5">
+      <section id="portfolio" className="py-5">
+        <div className="pt-5">
           <div className="text-center">
             <h1 className="display-3 fw-bold lh-1 gradient-text3">
               Portfolio Showcase

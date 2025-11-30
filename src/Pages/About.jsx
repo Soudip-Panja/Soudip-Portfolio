@@ -4,7 +4,7 @@ export default function About() {
   return (
     <>
       <section id="about" className="py-5">
-        <div className="text-center mb-4">
+        <div className="text-center mb-4 py-5">
           <h1 className="display-3 fw-bold lh-1 gradient-text3">About Me</h1>
           <h5 className="text-light pb-5">
             <span className="px-2">
