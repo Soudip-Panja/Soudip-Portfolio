@@ -1,5 +1,4 @@
 import { ExternalLink, Github } from "lucide-react";
-import "../Styles.css";
 
 const CardProject = ({
   Img,
