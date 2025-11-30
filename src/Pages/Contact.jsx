@@ -1,12 +1,10 @@
 import { UserRound, Mail, MessageSquareText, Send } from "lucide-react";
 
 export default function Contact() {
-  // Social Data Configuration
   const socialLinks = [
     {
       title: "LinkedIn",
-      // TASK 3 FIXED: Replaced "Let's Connect" with ID
-      handle: "@soudip-panja", 
+      handle: "@soudip-panja",
       link: "https://www.linkedin.com/in/soudip-panja/",
       img: "/LinkedIn.jpeg",
     },
@@ -38,13 +36,13 @@ export default function Contact() {
       title: "CodeSandbox",
       handle: "@soudip-panja",
       link: "https://codesandbox.io/u/soudip-panja",
-      img: "/CodeSandbox.jpg", 
+      img: "/CodeSandbox.jpg",
     },
   ];
 
   return (
     <>
-      <section id="Contact" className="pb-5">
+      <section id="contact" className="pb-5">
         <div className="text-center mb-4">
           <h1 className="display-3 fw-bold lh-1 gradient-text3">Contact Me</h1>
           <p className="contact-caption">
@@ -53,11 +51,10 @@ export default function Contact() {
           </p>
 
           <div className="row g-4 py-4">
-            {/* Form Section */}
             <div className="col-12 col-lg-8">
               <div className="contact-card">
                 <div className="card-body">
-                    <h3 className="connect-header">Get in Touch</h3>
+                  <h3 className="connect-header">Get in Touch</h3>
                   <form action="https://api.web3forms.com/submit" method="POST">
                     <input
                       type="hidden"
@@ -105,12 +102,10 @@ export default function Contact() {
                 </div>
               </div>
             </div>
-
-            {/* Connect With me Section */}
             <div className="col-12 col-lg-4">
               <div className="connect-card">
                 <h4 className="connect-header">Connect With Me</h4>
-                
+
                 <div className="connect-grid">
                   {socialLinks.map((social, index) => (
                     <a
@@ -120,7 +115,6 @@ export default function Contact() {
                       rel="noopener noreferrer"
                       className="social-box"
                     >
-                      {/* Top Row: Logo and ID */}
                       <div className="social-header">
                         <img
                           src={social.img}
@@ -129,8 +123,6 @@ export default function Contact() {
                         />
                         <span className="social-handle">{social.handle}</span>
                       </div>
-                      
-                      {/* Bottom Row: Name */}
                       <div className="social-content">
                         <h5 className="social-title">{social.title}</h5>
                       </div>

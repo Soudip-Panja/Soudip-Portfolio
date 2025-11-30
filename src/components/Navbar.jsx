@@ -1,6 +1,3 @@
-import { Link } from "react-router-dom";
-import "../Styles.css";
-
 export default function Navbar() {
   return (
     <>
@@ -9,11 +6,11 @@ export default function Navbar() {
         style={{ backgroundColor: "var(--main-bg-color)" }}
       >
         <div className="container-fluid">
-          <Link className="navbar-brand text-white" to="/">
+          <a className="navbar-brand text-white" href="#home">
             <h3 className="gradient-text1">
               <strong>Soudip</strong>
             </h3>
-          </Link>
+          </a>
 
           <button
             className="navbar-toggler"
@@ -30,9 +27,9 @@ export default function Navbar() {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ms-auto">
               <li className="nav-item">
-                <Link className="nav-link text-white" to="/">
+                <a className="nav-link text-white" href="#home">
                   Home
-                </Link>
+                </a>
               </li>
               <li className="nav-item">
                 <a className="nav-link text-white" href="#about">
@@ -40,14 +37,14 @@ export default function Navbar() {
                 </a>
               </li>
               <li className="nav-item">
-                <Link className="nav-link text-white" to="/portfolio">
+                <a className="nav-link text-white" href="#portfolio">
                   Portfolio
-                </Link>
+                </a>
               </li>
               <li className="nav-item">
-                <Link className="nav-link text-white" to="/contact">
+                <a className="nav-link text-white" href="#contact">
                   Contact
-                </Link>
+                </a>
               </li>
             </ul>
           </div>

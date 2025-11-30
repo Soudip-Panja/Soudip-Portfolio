@@ -1,5 +1,4 @@
 import { Sparkles, FileText, Code } from "lucide-react";
-import { Link } from "react-router-dom";
 
 export default function About() {
   return (
@@ -52,11 +51,11 @@ export default function About() {
                 </button>
               </a>
 
-              <Link href="#Portofolio">
+              <a href="#portfolio">
                 <button className="btn-projects">
                   <Code size={20} /> View Projects
                 </button>
-              </Link>
+              </a>
             </div>
           </div>
 

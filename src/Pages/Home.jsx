@@ -1,6 +1,4 @@
-import "../Styles.css";
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 import {
   Sparkles,
@@ -63,17 +61,13 @@ const Typewriter = ({ words, wait = 3000 }) => {
   );
 };
 export default function Home() {
-  // Define your tech stack here
   const techStack = ["MongoDB", "Express.js", "React", "Node.js"];
   return (
     <>
-      <section
-        
-      >
+      <section id="home">
         <div className="py-5">
           <div className="row">
             <div className="col-md-6 mt-5">
-              {/* Badge Animation */}
               <div className="animate-float">
                 <div className="badge-glow"></div>
                 <div className="badge-inner">
@@ -81,26 +75,19 @@ export default function Home() {
                   <span className="badge-text">Ready to Innovate</span>
                 </div>
               </div>
-
-              {/* TEXT DESIGN */}
               <div className="mt-4">
                 <h1 className="display-1 fw-bold lh-1">
-                  {/* Line 1: Full Stack */}
                   <span className="title-block">
                     <span className="text-glow"></span>
                     <span className="gradient-text-light">Full Stack</span>
                   </span>
 
                   <br />
-
-                  {/* Line 2: Developer */}
                   <span className="title-block mt-2">
                     <span className="text-glow"></span>
                     <span className="gradient-text2">Developer</span>
                   </span>
                 </h1>
-
-                {/* ANIMATED TYPEWRITER SECTION */}
                 <div className="mt-5">
                   <Typewriter
                     words={[
@@ -129,18 +116,14 @@ export default function Home() {
                     </div>
                   ))}
                 </div>
-
-                {/* CTA BUTTONS SECTION - UPDATED */}
                 <div className="cta-container mt-5">
                   <a href="#" className="cta-button">
                     Resume <Download size={20} />
                   </a>
-                  <a href="mailto:your@email.com" className="cta-button">
+                  <a href="#contact" className="cta-button">
                     Contact <Mail size={20} />
                   </a>
                 </div>
-
-                {/* Social Links - NEW DESIGN */}
                 <div className="social-links-container">
                   <a
                     href="https://github.com/Soudip-Panja"
