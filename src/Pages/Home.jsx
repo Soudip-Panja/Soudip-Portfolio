@@ -100,7 +100,7 @@ export default function Home() {
                 </div>
 
                 <div className="row">
-                  <div className="col-9">
+                  <div className="col-12 col-md-9">
                     <p className="hero-description">
                       I build scalable, impactful, high-performance dynamic, responsive applications with a strong focus on clean architecture and
                       user-first design.
