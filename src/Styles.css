@@ -216,6 +216,7 @@
 /* Description Text -> Home Page */
 .hero-description {
   font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  text-align: justify;
   font-size: 1.4rem;
   font-weight: 250;
   line-height: 1.7;
