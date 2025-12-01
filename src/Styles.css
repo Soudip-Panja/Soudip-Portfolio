@@ -197,15 +197,20 @@
     opacity: 0;
   }
 }
-
 .dynamic-text {
   font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  font-size: 1.8rem;
+  font-size: 1.5rem; 
   color: rgba(255, 255, 255, 0.7);
   font-weight: 300;
   letter-spacing: 1px;
   min-height: 1.6em;
   margin-top: 1rem;
+  transition: font-size 0.3s ease;
+}
+@media (min-width: 768px) {
+  .dynamic-text {
+    font-size: 1.8rem;
+  }
 }
 
 /* Description Text -> Home Page */
