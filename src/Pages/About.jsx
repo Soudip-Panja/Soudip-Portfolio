@@ -23,10 +23,7 @@ export default function About() {
             </h1>
             <h1 className="display-4 fw-bold text-white">Soudip Panja</h1>
             <p className="about-me-desc">
-              Passionate full-stack developer crafting intuitive digital
-              experiences with modern technologies. Specializing in React,
-              Node.js, and MongoDB to build scalable and user-centered
-              applications.
+             Passionate full-stack developer crafting intuitive and robust digital experiences. I build production ready responsive applications using React, Node.js, and MongoDB, focusing on scalability, performance, and clean engineering practices.
             </p>
             <div className="quote-container mx-auto mx-md-0">
               <div className="quote-icon-box">
