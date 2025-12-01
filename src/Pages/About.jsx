@@ -45,9 +45,9 @@ export default function About() {
             </div>
 
             <div className="buttons-container justify-content-center justify-content-md-start">
-              <a href="" target="_blank" rel="noreferrer">
+              <a href="https://drive.google.com/file/d/1ZNzBddWxgccW9x-Qx3D_6tEVrAo3azQM/view?usp=sharing" download="" target="_blank" rel="noreferrer">
                 <button className="btn-cv">
-                  <FileText size={20} /> Download CV
+                  <FileText size={20} /> View Resume
                 </button>
               </a>
 
