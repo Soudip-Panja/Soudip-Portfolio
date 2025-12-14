@@ -155,12 +155,15 @@ export default function Home() {
             <div className="col-md-6 d-flex align-items-center justify-content-center mt-5 mt-md-0">
               <div className="hero-img-container">
                 <DotLottieReact
-                  src="https://lottie.host/58753882-bb6a-49f5-a2c0-950eda1e135a/NLbpVqGegK.lottie"
+                  // src="https://lottie.host/b8662cba-b0c5-46e6-ac52-33896848370c/8aUhD0YGgC.lottie"
+                  src="https://lottie.host/cbf9f65e-20d7-40b6-a5fb-8853cf4ca060/Wl8fHwOFG6.lottie"
                   loop
                   autoplay
                   className="hero-img"
                 />
                 <div className="hero-glow"></div>
+                {/* Only for chair gif */}
+                <div className="seat-glow"></div>
               </div>
             </div>
           </div>

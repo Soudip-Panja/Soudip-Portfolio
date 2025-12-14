@@ -438,6 +438,26 @@
   animation: pulse 6s infinite;
 }
 
+.seat-glow {
+    position: absolute;
+    top: 90%; 
+    left: 25%;
+    transform: translate(-50%, -50%);
+    width: 120px;
+    height: 60px;
+    
+background: radial-gradient(
+      ellipse,
+      rgba(99, 102, 241, 0.3) 0%, 
+      rgba(168, 85, 247, 0.2) 40%,
+      rgba(0, 0, 0, 0) 70%
+    );
+    z-index: 1;
+    filter: blur(25px);
+    pointer-events: none;
+    animation: pulse 6s infinite;
+}
+
 @keyframes pulse {
   0%,
   100% {
