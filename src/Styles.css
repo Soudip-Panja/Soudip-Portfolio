@@ -392,6 +392,10 @@
   overflow: hidden;
   min-height: 400px;
   margin-top: 0rem;
+  /* Only for seat gif */
+  overflow: visible; 
+  min-height: 400px;
+  margin-top: 0rem;
 }
 @media (min-width: 992px) {
   .hero-img-container {
