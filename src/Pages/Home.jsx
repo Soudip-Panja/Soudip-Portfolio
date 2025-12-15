@@ -116,7 +116,7 @@ export default function Home() {
                   ))}
                 </div>
                 <div className="cta-container mt-5">
-                  <a href="https://drive.google.com/uc?id=1ZNzBddWxgccW9x-Qx3D_6tEVrAo3azQM" className="cta-button">
+                  <a href="https://drive.google.com/uc?export=download&id=1W_kJ9-r4KWHn-1NMr9R9mt2-ktPF_Jd3" className="cta-button">
                     Resume <Download size={20} />
                   </a>
                   <a href="#contact" className="cta-button">
