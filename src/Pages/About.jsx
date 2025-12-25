@@ -46,7 +46,7 @@ export default function About() {
 
             <div className="buttons-container justify-content-center justify-content-md-start">
               <a
-                href="https://drive.google.com/file/d/1m6ntYq3b1jyYXMjjImLka-N_XbIkhG1V/view?usp=sharing"
+                href="https://drive.google.com/file/d/1QHheRvoi29cYKQdcu5Xs3-m-fh1YU54L/view?usp=sharing"
                 download=""
                 target="_blank"
                 rel="noreferrer"
