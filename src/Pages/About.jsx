@@ -23,7 +23,10 @@ export default function About() {
             </h1>
             <h1 className="display-4 fw-bold text-white">Soudip Panja</h1>
             <p className="about-me-desc">
-             Passionate full-stack developer crafting intuitive and robust digital experiences. I build production ready responsive applications using React, Node.js, and MongoDB, focusing on scalability, performance, and clean engineering practices.
+              Passionate full-stack developer crafting intuitive and robust
+              digital experiences. I build production ready responsive
+              applications using React, Node.js, and MongoDB, focusing on
+              scalability, performance, and clean engineering practices.
             </p>
             <div className="quote-container mx-auto mx-md-0">
               <div className="quote-icon-box">
@@ -42,7 +45,12 @@ export default function About() {
             </div>
 
             <div className="buttons-container justify-content-center justify-content-md-start">
-              <a href="https://drive.google.com/file/d/1W_kJ9-r4KWHn-1NMr9R9mt2-ktPF_Jd3/view?usp=sharing" download="" target="_blank" rel="noreferrer">
+              <a
+                href="https://drive.google.com/file/d/1m6ntYq3b1jyYXMjjImLka-N_XbIkhG1V/view?usp=sharing"
+                download=""
+                target="_blank"
+                rel="noreferrer"
+              >
                 <button className="btn-cv">
                   <FileText size={20} /> View Resume
                 </button>
