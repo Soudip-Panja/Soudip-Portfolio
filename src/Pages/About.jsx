@@ -76,7 +76,7 @@ export default function About() {
                 <div className="profile-border"></div>
                 <div className="profile-overlay"></div>
                 <img
-                  src="/Profile Image.jpg"
+                  src="/Profile2.jpg"
                   alt="Soudip Panja"
                   className="profile-img"
                 />
